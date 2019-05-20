@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
+<title></title>
+</head>
+<body>
+
+<header>
+  <div class="container">
+      <div class="header_inner">
+
+        <a href="#"><div class="logo">ACTION </div></a>
+
+          <div class="Bignav">
+            <nav class="nav-top">
+                <a class="nav_link" href="#">Where</a>
+                <a class="nav_link" href="#">Contacts</a>
+              <a class="nav_link" href="#">About</a>
+              <a class="nav_link" href="#">Service</a>
+              <div class="drop">
+                  <div class="drop-but bit">LIST</div>
+                    <div class="showdrop">
+                        <a href="#" class="drop-but">Silipar</a>
+                        <a href="#" class="drop-but">Silip</a>
+                        <a href="#" class="drop-but">GAY restaurant</a>
+                        <a href="#" class="drop-but">blat</a>
+                      </div>
+              </div>
+              <div class="search">
+                  <span class="fa fa-search"></span>
+                  <input type="text" placeholder="Search..."></input>
+                </div>
+            </nav>
+
+            <nav class="nav-bottom">
+                <a class="nav_link" href="#">What we offer</a>
+                <a class="nav_link" href="#">Service for VIP</a>
+              <button type="button" class="button">Try it now</button>
+            </nav>
+          </div>
+      </div>
+  </div>
+</header>
+    <div class="intro claiton">
+        <div class="intro-inner">
+            <h1>Lacrimosa</h1>
+          </div>
+          <span class="cornR" onclick="pageNext()"></span>
+      </div>
+      <div class="intro claiton">
+          <div class="intro-inner">
+              <h1>Lacrimosa</h1>
+            </div>
+            <span class="cornR" onclick="pageNext()"></span>
+        </div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var slideTT = document.getElementsByClassName('claiton');
+var x = 0;
+ if (slideTT.length > 1){
+     for (let index = 1; index < slideTT.length; index++) {
+      slideTT[index].style = "display:none;opacity:0;";
+     }
+ }
+function pageNext(){
+  slideTT[x].style = "display:none;opacity:0;";
+  x++;
+  slideTT[x].style = "display:block;opacity:1;";
+}
+function pagePrev(){
+  slideTT[x].style = "display:none;opacity:0;";
+  x--;
+  slideTT[x].style = "display:block;opacity:1;";
+}
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" 
+integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
